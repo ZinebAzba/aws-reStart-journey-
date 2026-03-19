@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - KetoLife Café</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .error-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #f9fafb 0%, #dcfce7 100%);
+        }
+
+        .error-content {
+            max-width: 600px;
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-weight: bold;
+            color: #16a34a;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .error-message {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+
+        .error-description {
+            font-size: 1.125rem;
+            color: #4b5563;
+            margin-bottom: 2rem;
+            line-height: 1.75;
+        }
+
+        .error-button {
+            display: inline-block;
+            background-color: #16a34a;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+            font-size: 1.125rem;
+        }
+
+        .error-button:hover {
+            background-color: #15803d;
+        }
+
+        .emoji {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-content">
+            <div class="emoji">🥑</div>
+            <h1 class="error-code">404</h1>
+            <h2 class="error-message">Oops! Page Not Found</h2>
+            <p class="error-description">
+                Looks like this page went on a keto diet and disappeared! 
+                Don't worry, our delicious menu is still waiting for you on the home page.
+            </p>
+            <a href="index.html" class="error-button">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
