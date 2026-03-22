@@ -142,41 +142,32 @@ This project strengthened my understanding of serverless compute, event triggers
 Below are the key screenshots documenting the setup, execution, and results of the Lambda challenge.
 
 ### 1. S3 Bucket Configuration
-_Add a screenshot showing your S3 bucket and the .txt files you uploaded._
 
-![S3 Bucket Screenshot](<img width="1835" height="685" alt="image" src="https://github.com/user-attachments/assets/d744b11a-7fba-43fe-8ca1-32beaf9853a6" />
+(<img width="1835" height="685" alt="image" src="https://github.com/user-attachments/assets/d744b11a-7fba-43fe-8ca1-32beaf9853a6" />
 )
 
 ---
 
 ### 2. Lambda Function Code
-_Add a screenshot of your Lambda function code in the AWS console._
 
-![Lambda Code Screenshot](<img width="946" height="637" alt="image" src="https://github.com/user-attachments/assets/f28039f7-8f49-47bc-861c-1b4b0a7cbb41" />
+
+(<img width="946" height="637" alt="image" src="https://github.com/user-attachments/assets/f28039f7-8f49-47bc-861c-1b4b0a7cbb41" />
 )
 
 ---
 
 ### 3. S3 Trigger Configuration
 _Add a screenshot showing the S3 trigger attached to your Lambda function._
-
-![Lambda Trigger Screenshot](<img width="939" height="474" alt="image" src="https://github.com/user-attachments/assets/271fbd60-a2d6-400c-8651-307ac993ebdc" />
+(<img width="939" height="474" alt="image" src="https://github.com/user-attachments/assets/271fbd60-a2d6-400c-8651-307ac993ebdc" />
 )
-
 ---
 
 ### 4. CloudWatch Logs
-
-
-![CloudWatch Logs Screenshot](<img width="948" height="563" alt="image" src="https://github.com/user-attachments/assets/cd9932ef-dc66-49c5-8d76-cec8918b581e" />
+(<img width="948" height="563" alt="image" src="https://github.com/user-attachments/assets/cd9932ef-dc66-49c5-8d76-cec8918b581e" />
 
 ---
 
 ### 5. SNS Notification
-_Add a screenshot of the email notification you received with the word count._
-
-![SNS Email Screenshot](<img width="476" height="163" alt="image" src="https://github.com/user-attachments/assets/6237e2a4-c1cf-46d9-b521-44523dbaae6a" />
+(<img width="476" height="163" alt="image" src="https://github.com/user-attachments/assets/6237e2a4-c1cf-46d9-b521-44523dbaae6a" />
 <img width="725" height="180" alt="image" src="https://github.com/user-attachments/assets/5865b9ed-6ea8-40a4-9682-001bff50ff78" />
-
-)
 <img width="824" height="159" alt="image" src="https://github.com/user-attachments/assets/94d48b49-9da7-4bd8-83d0-7ed4653f38ad" />
