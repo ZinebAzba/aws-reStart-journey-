@@ -1,4 +1,11 @@
 
+
+## **📄 Project Summary — S3 → Lambda → SNS Word Count Automation**
+
+This project implements a fully serverless, event‑driven workflow on AWS. When a `.txt` file is uploaded to an S3 bucket, the event automatically triggers an AWS Lambda function. The function reads the file, calculates the total word count, and publishes the result to an Amazon SNS topic. SNS then delivers the notification to subscribed email endpoints.
+
+---
+
 ## **🧩 Architecture Overview**
 
 ```mermaid
@@ -129,3 +136,4 @@ Check CloudWatch logs for SNS errors and confirm subscription.
 This project strengthened my understanding of serverless compute, event triggers, and cloud‑native automation patterns.
 
 ---
+
