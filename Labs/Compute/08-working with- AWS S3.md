@@ -1,9 +1,9 @@
 
 ---
 
-# 📘 Lab Summary — Working with Amazon S3 (File Sharing + Notifications)
+#  Lab Summary — Working with Amazon S3 (File Sharing + Notifications)
 
-## 📝 Overview
+## Overview
 In this lab, I created and configured an Amazon S3 bucket to securely share product images with an external media user (`mediacouser`). I also set up automatic email notifications using Amazon SNS so that the administrator is alerted whenever the bucket contents change.
 
 The workflow included:
@@ -18,7 +18,7 @@ This lab demonstrates how to securely share S3 resources while maintaining visib
 
 ---
 
-## 🧠 Key Learnings
+##  Key Learnings
 
 ### 1. External user permissions
 The `mediacouser` IAM user can:
@@ -59,7 +59,7 @@ No private/public IP concepts are involved in this lab.
 
 ---
 
-## 🧪 What I Did in the Lab
+##  What I Did in the Lab
 
 ### ✔️ Task 1 — Connected to the CLI Host and configured AWS CLI  
 Configured credentials and region to run AWS CLI commands.
@@ -87,22 +87,26 @@ Created an SNS topic, allowed S3 to publish to it, subscribed via email, and add
 
 ---
 
-## 📸 Recommended Screenshots for GitHub
+##  Screenshots 
 
-Include these to document your work clearly:
+
 
 1. **S3 bucket showing the images folder**
-2. <img width="943" height="508" alt="image" src="https://github.com/user-attachments/assets/8a64a8a3-8c05-4cda-bf8b-c20f4f2e286a" />
-3. **Terminal screenshot of the failed ACL command**  
+ <img width="943" height="508" alt="image" src="https://github.com/user-attachments/assets/8a64a8a3-8c05-4cda-bf8b-c20f4f2e286a" />
+ 
+2. **Terminal screenshot of the failed ACL command**  
    - Shows the AccessDenied error
    - <img width="936" height="139" alt="image" src="https://github.com/user-attachments/assets/6c8269dc-f8bb-4e79-8f9e-9a481499b583" />
-4. **SNS topic configuration page**
-5. <img width="1908" height="357" alt="image" src="https://github.com/user-attachments/assets/4311e6b8-edfd-46fb-ad92-57d53f53b255" />
-6. **Email inbox showing S3 notifications**
-7. <img width="1022" height="182" alt="image" src="https://github.com/user-attachments/assets/0342096a-370d-4eaa-a7e7-82e62a89d96c" />
+   
+3. **SNS topic configuration page**
+. <img width="1908" height="357" alt="image" src="https://github.com/user-attachments/assets/4311e6b8-edfd-46fb-ad92-57d53f53b255" />
+
+4. **Email inbox showing S3 notifications**
+<img width="1022" height="182" alt="image" src="https://github.com/user-attachments/assets/0342096a-370d-4eaa-a7e7-82e62a89d96c" />
 <img width="1285" height="251" alt="image" src="https://github.com/user-attachments/assets/988f8cf9-409f-422e-b571-cf25a702c06e" />
 <img width="1295" height="251" alt="image" src="https://github.com/user-attachments/assets/588d9eba-6034-434b-8045-df535146822c" />
-8. **Optional:** IAM policy view for `mediaco` group  
+
+5. **IAM policy view:**  for `mediaco` group  
 <img width="1915" height="375" alt="image" src="https://github.com/user-attachments/assets/8a57c3f4-207d-46bc-b06a-8077bb4c4e59" />
 
 These screenshots demonstrate the full workflow and the security controls in action.
