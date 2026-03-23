@@ -61,7 +61,6 @@ This project was completed by a group of four AWS re/Start learners, each contri
 Enabled static website hosting and set:
 
 - Index document: `index.html`  
-- Error document: `error.html` (optional)
 
 ---
 
@@ -70,8 +69,7 @@ Uploaded all project assets:
 
 - `index.html`  
 - `styles.css`  
-- Images folder  
-- Additional assets  
+- Images folder   
 
 Verified correct MIME types and object paths.
 
@@ -137,3 +135,10 @@ This project demonstrates practical cloud deployment skills and effective teamwo
 ```
 
 ---
+## Challenges and Notes
+
+- Images must be saved in `.jpg` format.
+- Folder and file names must follow a strict naming convention (lowercase, no spaces).
+- Used the **Move** option in the **S3 bucket console** to reorganize files into the correct folder structure.
+- All images should be stored in a dedicated folder to ensure correct execution and clean organization.
+- Deployment was initially blocked due to a misspelled S3 bucket name, which caused access and hosting errors.
