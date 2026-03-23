@@ -42,7 +42,7 @@ This project was completed by a group of four AWS re/Start learners, each contri
 ## Deployment Steps
 
 ### 1. Website Development
-- Designed the layout and theme: Keto Life Visuals  
+- Designed the layout and theme: Keto Life Restaurant  
 - Created the HTML structure and CSS styling  
 - Selected and optimized images for performance  
 - Ensured clean folder structure for deployment  
