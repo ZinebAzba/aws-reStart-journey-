@@ -84,8 +84,8 @@ Your workflow is correct, complete, and ready for submission.
 
 # 1. Create bucket
 [ec2-user@ip-10-200-0-193 ~]$ aws configure
-AWS Access Key ID [None]: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-AWS Secret Access Key [None]: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+AWS Access Key ID [None]: xxxxxxxxxxxxxxxx
+AWS Secret Access Key [None]: xxxxxxxxxxxxxxxx
 Default region name [None]: us-west-2
 Default output format [None]: json
 [ec2-user@ip-10-200-0-193 ~]$ ^C
