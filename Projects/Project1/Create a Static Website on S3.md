@@ -11,6 +11,7 @@ Keto Life Restaurant is a collaborative static website created by four members o
 The website was built using HTML, CSS, and images, then hosted on Amazon S3 as a publicly accessible static site.  
 The final site is available through the S3 website endpoint.
 
+http://keto-life-restuarant.s3-website-us-west-2.amazonaws.com
 ---
 
 ## Team Members
