@@ -1,44 +1,43 @@
-# 📝 Lab Summary — Configuring an Amazon VPC
+
+---
+
+# Lab Summary – Configuring an Amazon VPC
 
 This lab focused on building a custom Virtual Private Cloud (VPC) and configuring the networking components required to support secure and controlled connectivity. The main objectives included:
 
 - Creating a VPC with a defined CIDR block  
-- Creating public and private subnets  
-- Attaching and configuring an Internet Gateway  
-- Creating and associating route tables  
-- Deploying a NAT Gateway for outbound internet access from the private subnet  
-- Launching EC2 instances in both subnets  
-- Using the public instance as a jump host to access the private instance  
-- Verifying connectivity and routing behavior  
+- Building public and private subnets  
+- Configuring an Internet Gateway and NAT Gateway  
+- Setting up route tables and subnet associations  
+- Launching EC2 instances in public and private subnets  
+- Testing connectivity between components  
 
-By completing these tasks, I gained hands‑on experience with core AWS networking concepts such as subnet isolation, routing, NAT behavior, and secure access patterns commonly used in production architectures.
+By completing these tasks, I gained hands-on experience with core AWS networking concepts such as subnet isolation, routing, NAT behavior, and secure access patterns commonly used in production architectures.
 
----
-
-# ⚠️ Challenges Encountered & Resolutions
+# Challenges Encountered & Resolutions
 
 ### 1. NAT Gateway Not Appearing in the Private Route Table
 
-When adding the `0.0.0.0/0` route for the private subnet, the NAT Gateway did not appear as a selectable target.
+**Issue**  
+The NAT Gateway did not appear as an available target when editing the private route table.
 
-**Cause:**  
-I was editing a route table belonging to the *default VPC* (`172.31.x.x`), not the Lab VPC (`10.0.x.x`). As a result, the private subnet was not associated with the correct route table.
+**Root Cause**  
+I was editing a route table belonging to the default VPC (`172.31.x.x`) instead of the route table associated with the custom Lab VPC.
 
-**Resolution:**  
-I selected the correct private route table for the Lab VPC and associated it with the Private Subnet. Once the association was fixed, the NAT Gateway appeared immediately.
+**Resolution**  
+I selected the correct private route table for the Lab VPC and associated it with the private subnet. Once the association was corrected, the NAT Gateway appeared immediately.
 
 ---
 
 ### 2. Ping Test Failing from the Private EC2 Instance
 
-The private instance returned 100% packet loss when running `ping amazon.com`, which initially suggested a connectivity issue.
+**Issue**  
+The private EC2 instance could not ping external domains.
 
-**Cause:**  
-ICMP traffic (`ping`) is not a reliable test through NAT Gateways. Many public endpoints do not respond to ping, and Amazon Linux 2023 may restrict ICMP behavior.
+**Root Cause**  
+NAT Gateways do not support ICMP traffic. Ping uses ICMP, which is not forwarded through a NAT Gateway.
 
-**Resolution:**  
-I validated connectivity using a TCP‑based command:
+**Resolution**  
+I validated outbound connectivity using TCP-based commands such as `curl` and `yum update`. These succeeded, confirming that the NAT Gateway and routing configuration were functioning correctly.
 
-```bash
-sudo yum update -y
-
+---
