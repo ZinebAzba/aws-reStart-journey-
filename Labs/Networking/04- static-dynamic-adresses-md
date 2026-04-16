@@ -1,1 +1,23 @@
 
+
+### **What I Learned From This Lab**
+In this lab, I learned the difference between **dynamic** and **static** IP addresses in Amazon EC2.  
+I observed that an auto‑assigned public IPv4 address is **dynamic** and changes every time an instance is stopped and started, while the private IPv4 address remains **static**.  
+To provide a permanent public IP, I learned how to allocate and associate an **Elastic IP (EIP)**, which stays attached to the instance across restarts and resolves the customer’s issue.
+
+---
+
+### **Customer Response**
+
+**Hello Bob,**
+
+Thanks for reaching out. I found that your instance was using an auto‑assigned public IPv4 address, which is **dynamic** and changes every time the instance is stopped and started. This behavior is expected in AWS.
+
+To fix the issue, I allocated an **Elastic IP** and associated it with your instance. An Elastic IP is a **static public address** that remains the same across restarts. Your instance now keeps the same public IP, and the issue is resolved.
+
+Best regards,  
+Cloud Support Engineer
+
+---
+
+
