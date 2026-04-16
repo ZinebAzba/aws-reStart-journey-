@@ -14,8 +14,6 @@ After reviewing the VPC, subnet, routing, and instance configuration, the root c
 - Instance A has a Public IPv4 address → internet works.  
 - Instance B has *no* Public IPv4 address → no internet access.
 
-
-
 This behavior is expected in AWS:  
 A public subnet alone does not provide internet access unless the instance has a public IP.
 
@@ -36,20 +34,9 @@ Best practice is to use:
 - `172.16.0.0/12`  
 - `192.168.0.0/16`
 
-
-
-
 ## **Conclusion**
 The internet connectivity issue is caused by the absence of a Public IPv4 address on Instance B.  
 No routing or subnet misconfiguration was found.
 
 ---
 
-If you want, I can also generate:
-
-- A shorter version  
-- A more formal AWS Support email style  
-- A version with diagrams  
-- A version formatted as a GitHub issue or pull request
-
-Just tell me what style you prefer.
