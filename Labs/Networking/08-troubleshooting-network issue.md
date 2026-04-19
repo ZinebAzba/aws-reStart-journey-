@@ -5,9 +5,10 @@
 Hello, Cloud Support!
 
 When I create an Apache server through the command line, I cannot ping it. I also get an error when I enter the IP address in the browser. Can you please help figure out what is blocking my connection?
+
 Thanks!
-Ana
-Contractor
+Ana Contractor
+
 ---
 
 
@@ -39,8 +40,8 @@ This prevented the Apache server from responding to web requests and caused the 
 
 ---
 
-### 🔧 I changed
-I updated the inbound rules of the instance’s security group:
+###  I changed
+ the inbound rules of the instance’s security group:
 
 - **Added:**  
   - `HTTP (TCP 80)` from `0.0.0.0/0`  
@@ -61,8 +62,8 @@ After applying the updated rules:
 
 ###  Final Result
 The Apache HTTP server is now accessible and functioning as expected.
-```
-#  **AWS Support Email (Professional Tone)**
+
+#  AWS Support Email 
 
 **Subject:** Resolution for Apache Server Connectivity Issue
 
