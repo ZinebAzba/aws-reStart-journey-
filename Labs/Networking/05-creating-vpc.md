@@ -124,7 +124,7 @@ Cloud Support Engineer
 
 ---
 
-# **✔Summary**
+# **Summary**
 This lab demonstrated how to translate customer requirements into a correct VPC design by:
 
 - Validating private IP ranges using RFC1918  
